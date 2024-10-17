@@ -1,0 +1,66 @@
+.hero {
+  background-color: $flat-white;
+}
+
+.hero__wrapper {
+  padding: 20px 20px 60px;
+  text-align: center;
+}
+
+.hero__badge {
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  margin: 5px 0 4px;
+}
+
+.hero__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero__description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hero__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.hero__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  position: relative;
+}
+
+.hero__old-price::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid $base-primary;
+  width: 100%;
+  top: 16px;
+  left: 0;
+}
+
+.hero__new-price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-left: 6px;
+  margin-right: auto;
+}
+

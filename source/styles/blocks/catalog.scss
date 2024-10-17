@@ -1,0 +1,124 @@
+.catalog {
+  background-color: $lightest-grey;
+}
+
+.catalog__wrapper {
+  padding: 50px 20px 44px;
+}
+
+.catalog__badge {
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.catalog__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+}
+
+.catalog__filter-heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+.catalog__filter-sort {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 20px 3px;
+}
+
+.catalog__filter-sort-heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+.catalog__filter-sort-select {
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  color: $base-primary;
+}
+
+.catalog__cards-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.catalog__pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.catalog__pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__pagination-link {
+  text-decoration: none;
+  color: $base-primary;
+  background-color: $base-white;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.catalog__pagination-link--current {
+  background-color: $lightest-grey;
+  color: $base-black;
+  font-weight: 600;
+}
+
+.catalog__pagination-link--prev,
+.catalog__pagination-link--next {
+  position: relative;
+}
+
+.catalog__pagination-link--prev::before {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/pagination-prev.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-primary;
+  width: 6px;
+  height: 10px;
+  top: 15px;
+  left: 16px;
+}
+
+.catalog__pagination-link--next::before {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/pagination-next.svg");
+  mask-repeat: no-repeat;
+  background-color: $base-primary;
+  width: 6px;
+  height: 10px;
+  top: 15px;
+  left: 18px;
+}

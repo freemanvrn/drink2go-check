@@ -1,6 +1,6 @@
 .footer-nav {
   border-top: 1px solid $base-secondary;
-  padding: 20px 0;
+  padding: 20px 0 28px;
 }
 
 .footer-nav__title {
@@ -9,13 +9,21 @@
   line-height: 20px;
   font-weight: 700;
   letter-spacing: 0.28px;
-  margin: 0;
+  margin: 0 0 17.5px;
 }
 
 .footer-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-nav__item {
+  margin: 17px 0;
+}
+
+.footer-nav__item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-nav__link {
@@ -25,4 +33,5 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
+  letter-spacing: 0.24px;
 }

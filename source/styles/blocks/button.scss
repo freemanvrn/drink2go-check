@@ -9,3 +9,16 @@
   border-radius: 4px;
   padding: 8px 20px;
 }
+
+.button:hover,
+.button:focus {
+  background-color: $primary-lighter;
+}
+
+.button:active {
+  background-color: $primary-darker;
+}
+
+.button:disabled {
+  background-color: $base-grey;
+}

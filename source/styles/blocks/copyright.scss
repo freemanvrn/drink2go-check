@@ -1,6 +1,7 @@
 .copyright {
   border-top: 1px solid $base-secondary;
-  padding: 17px 37px 0;
+  padding-top: 17px;
+  margin: 0 -20px;
 }
 
 .copyright__link {
@@ -9,16 +10,17 @@
   font-size: 12px;
   line-height: 16px;
   position: relative;
-  }
+  padding-left: 57px;
+}
 
-  .copyright__link::after {
-    position: absolute;
-    content: "";
+.copyright__link::after {
+  position: absolute;
+  content: "";
   mask-image: url("../../icons/html-academy.svg");
   mask-repeat: no-repeat;
   background-color: $base-grey;
   width: 112px;
   height: 16px;
-  top: 1px;
-  left: 94px;
-  }
+  top: 0;
+  left: 151px;
+}

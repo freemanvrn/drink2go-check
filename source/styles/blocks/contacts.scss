@@ -1,6 +1,5 @@
 .contacts {
-  border-top: 1px solid $base-secondary;
-  padding: 20px 0 20px;
+  padding-bottom: 20px;
 }
 
 .contacts__title {
@@ -9,7 +8,10 @@
   line-height: 20px;
   font-weight: 700;
   letter-spacing: 0.28px;
-  margin: 0 0 19px;
+  margin: 0 -20px 20px;
+  border-top: 1px solid $base-secondary;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .contacts__text {

@@ -1,6 +1,5 @@
 .footer-media {
-  border-top: 1px solid $base-secondary;
-  padding: 20px 0 28px;
+  padding-bottom: 27px;
 }
 
 .footer-media__title {
@@ -9,7 +8,10 @@
   line-height: 20px;
   font-weight: 700;
   letter-spacing: 0.28px;
-  margin: 0 0 17.5px;
+  margin: 0 -20px 17.5px;
+  border-top: 1px solid $base-secondary;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .footer-media__list {

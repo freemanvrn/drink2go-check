@@ -151,10 +151,31 @@
   padding-left: 52px;
 }
 
+.catalog__filter-toggle-item label {
+  position: relative;
+  display: block;
+}
+
+.catalog__filter-toggle-mark {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  border: 2px solid $base-grey;
+  background-color: $base-white;
+  top: -3px;
+}
+
+.catalog__filter-buttons {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .catalog__filter-sort {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0 20px 3px;
+  margin: 44px 0 20px 3px;
 }
 
 .catalog__filter-sort-heading {

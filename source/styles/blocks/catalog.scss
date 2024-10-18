@@ -4,6 +4,7 @@
 
 .catalog__wrapper {
   padding: 50px 20px 44px;
+  text-align: center;
 }
 
 .catalog__badge {
@@ -12,7 +13,9 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+  letter-spacing: 0.48px;
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .catalog__heading {
@@ -22,11 +25,130 @@
   margin: 0;
 }
 
+.catalog__filter-price {
+  border: 0;
+  margin: 21px 0 20px;
+  padding: 0;
+}
+
 .catalog__filter-heading {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   margin: 0;
+  padding: 0;
+}
+
+.catalog__filter-heading--price {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.catalog__filter-value {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.catalog__filter-value::after {
+  position: absolute;
+  content: "";
+  background: url("../../icons/line-range.svg");
+  background-repeat: no-repeat;
+  background-color: $base-grey;
+  width: 8px;
+  height: 2px;
+  top: 21px;
+  left: 136px;
+}
+
+.catalog__filter-input {
+  text-align: center;
+  width: 118px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid $primary-lighter;
+  background: $base-white;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.catalog__filter-input--min {
+  color: $base-grey;
+}
+
+.catalog__filter-milk {
+  border: 0;
+  margin: 32px 0 0;
+  padding: 0;
+}
+
+.catalog__filter-heading--milk {
+  margin-top: 32px;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.catalog__filter-radio-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.catalog__filter-radio-item {
+  margin-bottom: 25px;
+}
+
+.catalog__filter-radio-name {
+  padding-left: 34px;
+}
+
+.catalog__filter-radio-item label {
+  position: relative;
+  display: block;
+}
+
+.catalog__filter-radio-mark {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  border: 2px solid $base-grey;
+  background-color: $base-white;
+  top: -3px;
+}
+
+.catalog__filter-origin {
+  border: 0;
+  margin: 9px 0 0;
+  padding: 0;
+}
+
+.catalog__filter-heading--origin {
+  margin-top: 9px;
+  margin-bottom: 21px;
+  text-align: left;
+}
+
+.catalog__filter-toggle-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.catalog__filter-toggle-item {
+  margin-bottom: 25px;
+}
+
+.catalog__filter-toggle-name {
+  padding-left: 52px;
 }
 
 .catalog__filter-sort {

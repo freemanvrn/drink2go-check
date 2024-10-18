@@ -152,11 +152,12 @@
         </h2>
         <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog__filter-price">
-            <legend class="catalog__filter-heading">
+            <legend class="catalog__filter-heading catalog__filter-heading--price">
               Цена
             </legend>
             <div class="catalog__filter-slider">
-
+              <input type="range" id="price" name="price" min="0" max="900" />
+              <label class="visually-hidden" for="price">Price</label>
             </div>
             <div class="catalog__filter-value">
               <label class="visually-hidden" for="min-price">от</label>
@@ -166,7 +167,7 @@
             </div>
           </fieldset>
           <fieldset class="catalog__filter-milk">
-            <legend class="catalog__filter-heading">
+            <legend class="catalog__filter-heading catalog__filter-heading--milk">
               Наличие молока
             </legend>
             <ul class="catalog__filter-radio-list">
@@ -201,7 +202,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog__filter-origin">
-            <legend class="catalog__filter-heading">
+            <legend class="catalog__filter-heading catalog__filter-heading--origin">
               Страна произрастания
             </legend>
             <ul class="catalog__filter-toggle-list">

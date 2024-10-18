@@ -78,7 +78,20 @@
   padding: 0;
 }
 
-.catalog__filter-input--min {
+.catalog__filter-input--min::placeholder,
+.catalog__filter-input--max::placeholder {
+  color: $base-grey;
+}
+
+.catalog__filter-input--min:focus,
+.catalog__filter-input--max:focus {
+  border: 2px solid $primary-darker;
+  color: $base-black;
+}
+
+.catalog__filter-input--min:disabled,
+.catalog__filter-input--max:disabled {
+  border: 2px solid $light-grey;
   color: $base-grey;
 }
 

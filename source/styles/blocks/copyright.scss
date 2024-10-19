@@ -2,6 +2,12 @@
   border-top: 1px solid $base-secondary;
   padding-top: 17px;
   margin: 0 -20px;
+
+  @media (min-width:$tablet-width) {
+    border-top: none;
+    padding-top: 7px;
+    text-align: center;
+  }
 }
 
 .copyright__link {
@@ -11,6 +17,11 @@
   line-height: 16px;
   position: relative;
   padding-left: 57px;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 0;
+    margin-right: 116px;
+  }
 }
 
 .copyright__link::after {
@@ -23,4 +34,9 @@
   height: 16px;
   top: 0;
   left: 151px;
+
+  @media (min-width:$tablet-width) {
+    top: 0;
+    left: 94px;
+  }
 }

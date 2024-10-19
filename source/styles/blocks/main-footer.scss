@@ -1,8 +1,25 @@
 .main-footer {
   padding: 22px 20px 30px;
+
+  @media (min-width:$tablet-width) {
+    padding: 42px 20px 40px 20px;
+  }
 }
 
 .main-footer__inner {
   display: flex;
   padding-bottom: 18px;
+
+  @media (min-width:$tablet-width) {
+    justify-content: space-between;
+    margin-right: 158px;
+  }
+}
+
+.main-footer__columns {
+  @media (min-width:$tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-between;
+  }
 }

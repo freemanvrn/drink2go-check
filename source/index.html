@@ -15,49 +15,51 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container" data-test="header">
-    <a class="main-header__logo" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-desktop.svg">
-        <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Cat Energy">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--closed">
-      <div class="main-nav__toggle-wrapper">
-        <a class="main-nav__toggle-link main-nav__toggle-link--login" href="#">
-          <span class="visually-hidden">Войти</span>
-        </a>
-        <a class="main-nav__toggle-link main-nav__toggle-link--basket" href="#">
-          <span class="visually-hidden">Корзина</span>
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <ul class="main-nav__list">
-        <li class="main-nav__item  main-nav__item--current">
-          <a class="main-nav__link" href="#">
-            Главная
+  <header class="main-header" data-test="header">
+    <div class="main-header__wrapper container">
+      <a class="main-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" width="170" height="36" type="image/svg+xml" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="82" height="36" type="image/svg+xml" srcset="images/logo-tablet.svg">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="32" height="36" alt="Логотип Cat Energy">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__toggle-wrapper">
+          <a class="main-nav__toggle-link main-nav__toggle-link--login" href="#">
+            <span class="visually-hidden">Войти</span>
           </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Каталог
+          <a class="main-nav__toggle-link main-nav__toggle-link--basket" href="#">
+            <span class="visually-hidden">Корзина</span>
           </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Доставка
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            О нас
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--current">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Каталог
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Drink2Go - качественные кофейные напитки в удобном формате</h1>

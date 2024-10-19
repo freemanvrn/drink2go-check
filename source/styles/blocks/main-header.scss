@@ -1,9 +1,21 @@
 .main-header {
   background-color: $base-white;
   padding: 12px 22px 9px 20px;
-  display: flex;
-  justify-content: space-between;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+
+
 }
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 278px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    }
+  }
+

@@ -5,7 +5,13 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    padding: 22px 20px 0 20px;
+    }
 
+  @media (min-width: $desktop-width) {
+    padding: 22px 40px 0 40px;
+  }
 }
 
 .main-header__wrapper {
@@ -17,5 +23,17 @@
     width: 768px;
     margin: 0 auto;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      margin: 0 auto;
+    }
   }
+
+  .main-header__logo {
+    @media (min-width: $tablet-width) {
+margin-bottom: 18px;
+      }
+    }
+
 

@@ -1,10 +1,32 @@
 .hero {
   background-color: $flat-white;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(0deg, $base-white 252px, $flat-white 252px);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    }
 }
 
 .hero__wrapper {
-  padding: 20px 20px 60px;
+  padding: 20px 0 60px;
   text-align: center;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+}
+
+.hero__wrapper-inner {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 608px;
+    display: flex;
+    flex-direction: column-reverse;
+    }
 }
 
 .hero__badge {
@@ -15,6 +37,10 @@
   text-transform: uppercase;
   letter-spacing: 0.48px;
   margin: 5px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    }
 }
 
 .hero__title {
@@ -24,13 +50,32 @@
   letter-spacing: 0.72px;
   margin: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    margin-bottom: 15px;
+    }
 }
 
 .hero__description {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 22px;
+    }
+}
+
+.hero__description br {
+  @media (max-width: $mobile-width-only) {
+  display: none;
+    }
 }
 
 .hero__order {
@@ -38,6 +83,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 189px;
+    margin-bottom: 19px;
+    }
 }
 
 .hero__old-price {

@@ -66,38 +66,44 @@
     <h1 class="visually-hidden">Drink2Go - качественные кофейные напитки в удобном формате</h1>
 
     <section class="hero" data-test="hero">
+
       <div class="hero__wrapper slider-pagination container">
-        <!-- <button class="slider-button-prev" type="button"></button> -->
-        <!-- <button class="slider-button-next" type="button"></button> -->
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset="images/flat-white-desktop@1x.webp 1x, images/flat-white-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset="images/flat-white-tablet@1x.webp 1x, images/flat-white-tablet@2x.webp 2x">
-          <source type="image/webp" width="280" height="280" srcset="images/flat-white-mobile@1x.webp 1x, images/flat-white-mobile@2x.webp 2x">
-          <source type="image/png" media="(min-width: 1440px)" width="600" height="600" srcset="images/flat-white-desktop@1x.png 1x, images/flat-white-desktop@2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" width="476" height="476" srcset="images/flat-white-tablet@1x.png 1x, images/flat-white-tablet@2x.png 2x">
-          <img src="images/flat-white-mobile@1x.png" srcset="images/flat-white-mobile@2x.png 2x" width="280" height="280" alt="Изображение бежевой банки Декаф Флэт Уайт">
-        </picture>
-        <p class="hero__badge">
-          Новинка!
-        </p>
-        <h2 class="hero__title">
-          Декаф Флэт Уайт
-        </h2>
-        <p class="hero__description">
-          Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
-        </p>
-        <div class="hero__order">
-          <span class="hero__old-price">
-            295₽
-          </span>
-          <span class="hero__new-price">
-            225₽
-          </span>
-          <button class="hero__button button" type="button">
-            Заказать
-          </button>
+        <button class="slider-button-prev" type="button"></button>
+        <div class="hero__wrapper-inner">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" width="600" height="600" srcset="images/flat-white-desktop@1x.webp 1x, images/flat-white-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" width="476" height="476" srcset="images/flat-white-tablet@1x.webp 1x, images/flat-white-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="280" srcset="images/flat-white-mobile@1x.webp 1x, images/flat-white-mobile@2x.webp 2x">
+            <source type="image/png" media="(min-width: 1440px)" width="600" height="600" srcset="images/flat-white-desktop@1x.png 1x, images/flat-white-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="476" height="476" srcset="images/flat-white-tablet@1x.png 1x, images/flat-white-tablet@2x.png 2x">
+            <img src="images/flat-white-mobile@1x.png" srcset="images/flat-white-mobile@2x.png 2x" width="280" height="280" alt="Изображение бежевой банки Декаф Флэт Уайт">
+          </picture>
+          <div class="hero__wrapper-card">
+            <p class="hero__badge">
+              Новинка!
+            </p>
+            <h2 class="hero__title">
+              Декаф Флэт Уайт
+            </h2>
+            <p class="hero__description">
+              Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня
+            </p>
+            <div class="hero__order">
+              <span class="hero__old-price">
+                295₽
+              </span>
+              <span class="hero__new-price">
+                225₽
+              </span>
+              <button class="hero__button button" type="button">
+                Заказать
+              </button>
+            </div>
+          </div>
         </div>
+        <button class="slider-button-next" type="button"></button>
       </div>
+
     </section>
 
     <section class="features container" data-test="features">

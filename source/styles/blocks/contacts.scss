@@ -4,6 +4,11 @@
   @media (min-width:$tablet-width) {
     width: 223px;
   }
+
+  @media (min-width:$desktop-width) {
+    width: 317px;
+    margin-left: 169px;
+  }
 }
 
 .contacts__title {

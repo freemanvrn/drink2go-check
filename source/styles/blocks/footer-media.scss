@@ -4,6 +4,10 @@
   @media (min-width:$tablet-width) {
     margin-left: 34px;
   }
+
+  @media (min-width:$desktop-width) {
+    margin-left: 201px;
+  }
 }
 
 .footer-media__title {

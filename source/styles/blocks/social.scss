@@ -1,6 +1,7 @@
 .social__list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social__link {
@@ -20,6 +21,11 @@
   height: 20px;
   top: -8px;
   left: 9px;
+
+  @media (min-width:$desktop-width) {
+    top: -7px;
+    left: -30px;
+  }
 }
 
 .social__link--pinterest::after {
@@ -32,6 +38,11 @@
   height: 22px;
   top: -9px;
   left: 66px;
+
+  @media (min-width:$desktop-width) {
+    top: -8px;
+    left: 28px;
+  }
 }
 
 .social__link--ok::after {
@@ -44,4 +55,9 @@
   height: 20px;
   top: -8px;
   left: 128px;
+
+  @media (min-width:$desktop-width) {
+    top: -7px;
+    left: 90px;
+  }
 }

@@ -8,6 +8,10 @@
     padding-top: 7px;
     text-align: center;
   }
+
+  @media (min-width:$desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__link {

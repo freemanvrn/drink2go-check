@@ -1,5 +1,9 @@
 .footer-nav {
   padding-bottom: 28px;
+
+  @media (min-width:$desktop-width) {
+padding-bottom: 24px;
+  }
 }
 
 .footer-nav__title {

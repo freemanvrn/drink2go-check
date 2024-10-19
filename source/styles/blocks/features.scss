@@ -1,6 +1,10 @@
 .features__wrapper {
   padding: 50px 20px 60px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+padding-top: 0;
+    }
 }
 
 .features__badge {

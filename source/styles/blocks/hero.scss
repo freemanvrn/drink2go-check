@@ -3,9 +3,14 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(0deg, $base-white 252px, $flat-white 252px);
+    background-image: linear-gradient(0deg, $base-white 248px, $flat-white 248px);
     background-position: bottom;
     background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+    background-color: $flat-white;
+    background-image: none;
     }
 }
 
@@ -15,7 +20,11 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 60px 0 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
   }
 }
 
@@ -27,6 +36,25 @@
     display: flex;
     flex-direction: column-reverse;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 1280px;
+      display: flex;
+      flex-direction: row;
+      }
+}
+
+.hero__wrapper-inner picture {
+  @media (min-width: $desktop-width) {
+    padding: 0 30px 0 25px;
+  }
+}
+
+.hero__wrapper-card {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 151px;
+  }
 }
 
 .hero__badge {
@@ -55,7 +83,7 @@
     font-size: 56px;
     line-height: 80px;
     letter-spacing: 1.12px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     }
 }
 
@@ -68,8 +96,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__description br {
@@ -87,6 +119,11 @@
   @media (min-width: $tablet-width) {
     margin: 0 189px;
     margin-bottom: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      width: 230px;
     }
 }
 

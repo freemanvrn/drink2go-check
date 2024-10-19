@@ -29,6 +29,11 @@
     top: 250px;
     left: 34px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 317px;
+      left: 34px;
+      }
 }
 
 .slider-button-next::before {
@@ -46,4 +51,9 @@
     top: 250px;
     left: 35px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 317px;
+      left: 35px;
+      }
 }

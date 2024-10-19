@@ -18,6 +18,13 @@
     padding-left: 60px;
     display: flex;
     }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
+    padding-left: 182px;
+    padding-right: 100px;
+    padding-top: 10px;
+  }
 }
 
 .main-nav__toggle-link {
@@ -25,6 +32,19 @@
   display: block;
   position: relative;
   text-decoration: none;
+  text-align: right;
+}
+
+.main-nav__toggle-link-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.24px;
+  }
 }
 
 .main-nav__toggle-link--login,
@@ -32,6 +52,20 @@
   @media (min-width: $tablet-width) {
   width: 60px;
   height: 38px;
+  }
+}
+
+.main-nav__toggle-link--login {
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    height: 16px;
+  }
+}
+
+.main-nav__toggle-link--basket {
+  @media (min-width: $desktop-width) {
+    width: 89px;
+    height: 16px;
   }
 }
 
@@ -50,6 +84,11 @@
     top: 10px;
     right: 22px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      right: 56px;
+    }
 }
 
 .main-nav__toggle-link--basket::before {
@@ -66,6 +105,11 @@
   @media (min-width: $tablet-width) {
     top: 10px;
     right: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      right: 73px;
     }
 }
 
@@ -158,6 +202,10 @@
     flex-wrap: wrap;
     padding-left: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 .main-nav__item {
@@ -174,6 +222,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px 12px 20px;
+}
+
+@media (min-width: $desktop-width) {
+  padding: 10px 20px;
 }
 }
 
